@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Cristobel Shopping Home</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- AUTH SCREEN -->
+  <div class="auth-screen" id="authScreen">
+    <div class="brand">
+      <div class="logo">🛍️</div>
+      <h1>Cristobel <span>Shopping Home</span></h1>
+      <p>Your one-stop shop, anytime, anywhere.</p>
+    </div>
+
+    <div class="card">
+      <div class="tabs">
+        <button class="tab active" id="loginTab">Login</button>
+        <button class="tab" id="signupTab">Sign Up</button>
+      </div>
+
+      <form id="loginForm" class="form">
+        <div class="input-group">
+          <input type="email" required>
+          <label>Email</label>
+        </div>
+        <div class="input-group">
+          <input type="password" required>
+          <label>Password</label>
+        </div>
+        <button type="submit" class="main-btn">Login</button>
+        <p class="switch-text">Don't have an account? <a href="#" id="toSignup">Sign Up</a></p>
+      </form>
+
+      <form id="signupForm" class="form hidden">
+        <div class="input-group">
+          <input type="text" required>
+          <label>Full Name</label>
+        </div>
+        <div class="input-group">
+          <input type="email" required>
+          <label>Email</label>
+        </div>
+        <div class="input-group">
+          <input type="password" required>
+          <label>Password</label>
+        </div>
+        <button type="submit" class="main-btn">Create Account</button>
+        <p class="switch-text">Already have an account? <a href="#" id="toLogin">Login</a></p>
+      </form>
+    </div>
+
+    <p class="footer-note">By continuing, you agree to our Terms &amp; Privacy Policy</p>
+  </div>
+
+  <!-- SHOP SCREEN -->
+  <div class="shop-screen hidden" id="shopScreen">
+
+    <div class="promo">EXTRA 20% OFF THIS WEEK ONLY</div>
+
+    <header>
+      <div class="top-row">
+        <button class="icon-btn" id="menuBtn">☰</button>
+        <div class="logo-small">Cristobel <span>Shopping Home</span></div>
+        <button class="icon-btn" id="logoutBtn">👤</button>
+      </div>
+
+      <div class="search-row">
+        <input type="text" placeholder="Search products">
+        <span>🔍</span>
+      </div>
+
+      <div class="nav-row" id="navRow">
+        <span class="active">Just In</span>
+        <span>Brands</span>
+        <span>Women</span>
+        <span>Men</span>
+        <span>Shoes</span>
+        <span>Kids</span>
+      </div>
+    </header>
+
+    <p class="welcome-msg" id="welcomeMsg"></p>
+
+    <div class="card-row" id="cardRow"></div>
+
+    <div class="banner">
+      <h2>NEW SEASON<br>ARRIVALS</h2>
+    </div>
+
+    <h3 class="section-title">Featured</h3>
+    <div class="feature-row" id="featureRow"></div>
+
+    <div class="contact-row">
+      <a href="tel:+254708773829" class="call-btn">📞 Call Us</a>
+      <a href="https://wa.me/254708773829?text=Hi%2C%20I%27m%20interested%20in%20your%20products" class="whatsapp-btn" target="_blank">💬 WhatsApp</a>
+    </div>
+
+    <footer>
+      <h2>Don't miss out!</h2>
+      <p>Get early access to the latest deals and arrivals.</p>
+      <input type="email" placeholder="Email Address">
+      <button id="submitBtn">SUBMIT</button>
+    </footer>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+<h2>My Post</h2>
+
+<img src="images/my-picture.jpg"
+     alt="My picture"
+     style="width:100%; border-radius:15px;">
+
+<video controls
+       style="width:100%; margin-top:15px; border-radius:15px;">
+    <source src="videos/my-video.mp4" type="video/mp4">
+          </video>
